@@ -18,7 +18,9 @@
  */
 var currentPage = 0;
 var weiboUrl = 'http://weibo.com/';
-var apiUrl = 'http://test.ieltseye.com/ieltsApi/index/page/';
+var siteUrl = 'http://www.ieltseye.com/';
+var apiUrl = siteUrl+'ieltsApi/index';
+var keyword = '';
 var app = {
     // Application Constructor
     initialize: function() {
@@ -48,58 +50,92 @@ var app = {
 
 $( document ).on( "pageinit", function( event ) {
                  $( "#refresh" ).bind( "tap", function(){
+                                      keyword = '';
+                                      currentPage = 0;
+                                      $('#searchKeyword').val(keyword);
+                                      $('html, body').animate({scrollTop: 0}, 1000);
                                       getIeltsWeibo();
-                                      $.mobile.silentScroll(0);
                                       });
                  $( "#prevPage" ).bind( "tap", function(){
+                                      $('html, body').animate({scrollTop: 0}, 1000);
                                       prevPage();
-                                      $.mobile.silentScroll(0);
                                       });
                  $( "#nextPage" ).bind( "tap", function(){
+                                      $('html, body').animate({scrollTop: 0}, 1000);
                                       nextPage();
-                                      $.mobile.silentScroll(0);
                                       });
+                 $("#ieltseyeSearchForm").submit(function(){
+                                     keyword = $('#searchKeyword').val();
+                                     currentPage = 0;
+                                     if(!keyword){
+                                        return false;
+                                     }else{
+                                      $('html, body').animate({scrollTop: 0}, 1000);
+                                         getIeltsWeibo();
+                                         return false;
+                                     }
+                                    });
+                 
+                 $("#ieltseyeHome").bind("tap", function(){
+                                         var ref = window.open(encodeURI(siteUrl), '_blank', 'location=yes');
+                                         });
 });
 s
 function getIeltsWeibo(){
+    $.mobile.loading( "show", {
+                     text: '',
+                     textVisible: false,
+                     theme: 'd',
+                     textonly: false,
+                     html: ''
+     });
     $.ajax({
            type: "get",
-           url: apiUrl+"0",
+           url: apiUrl+"?page=0"+"&keyword="+keyword,
            dataType: 'json',
            success: function(data){
+           console.log(apiUrl+"?page=0"+"&keyword="+keyword);
                if(data.datas != ''){
-                   var weibos = '';
-                   $.each(data.datas, function(k, v){
-                          weibos+='<li data-role="list-divider"><a href="">'+v.screen_name+'</a></li><li>'+v.text+'</li>';
-                          });
+                   var weibos = formateWeibo(data);
                    $( "#ieltsEyeWeibos" ).html(weibos).closest( "#ieltsEyeWeibos" ).listview( "refresh" ).trigger( "create" );
                }else{
                    resetIeltsEyeWeibo();
                }
            },
+           complete:function(){
+                $.mobile.loading( "hide" );           
+           },
            error:function(){
                 resetIeltsEyeWeibo(textStatus+":"+errorThrown, "出现错误了，请稍后再试。");
            }
     });
+
 }
 
 function prevPage(){
+    $.mobile.loading( "show", {
+                     text: '',
+                     textVisible: false,
+                     theme: 'd',
+                     textonly: false,
+                     html: ''
+    });
     currentPage = currentPage <= 0 ? 0 :currentPage-1;
     console.log(currentPage);//debug
     $.ajax({
            type: "get",
-           url: apiUrl+currentPage,
+           url: apiUrl+"?page="+currentPage+"&keyword="+keyword,
            dataType: 'json',
            success: function(data){
                if(data.datas != ''){
-                   var weibos = '';
-                   $.each(data.datas, function(k, v){
-                          weibos+='<li data-role="list-divider"><a href="">'+v.screen_name+'</a></li><li>'+v.text+'</li>';
-                          });
+                   var weibos = formateWeibo(data);
                    $( "#ieltsEyeWeibos" ).html(weibos).closest( "#ieltsEyeWeibos" ).listview( "refresh" ).trigger( "create" );
                }else{
                    resetIeltsEyeWeibo();
                }
+           },
+           complete:function(){
+               $.mobile.loading( "hide" );
            },
            error:function(){
                resetIeltsEyeWeibo(textStatus+":"+errorThrown, "出现错误了，请稍后再试。");
@@ -108,23 +144,31 @@ function prevPage(){
 }
 
 function nextPage(){
+    $.mobile.loading( "show", {
+                     text: '',
+                     textVisible: false,
+                     theme: 'd',
+                     textonly: false,
+                     html: ''
+    });
     currentPage = currentPage > 50 ? 50 :currentPage+1;
-    console.log(currentPage);//debug
+    console.log(apiUrl+"?page="+currentPage+"&keyword="+keyword);//debug
     $.ajax({
            type: "get",
-           url: apiUrl+currentPage,
+           url:  apiUrl+"?page="+currentPage+"&keyword="+keyword,
            dataType: 'json',
            success: function(data){
                if(data.datas != ''){
-                   var weibos = '';
-                   $.each(data.datas, function(k, v){
-                          weibos+='<li data-role="list-divider"><a href="">'+v.screen_name+'</a></li><li>'+v.text+'</li>';
-                          });
+                   var weibos = formateWeibo(data);
                    $( "#ieltsEyeWeibos" ).html(weibos).closest( "#ieltsEyeWeibos" ).listview( "refresh" ).trigger( "create" );
                }else{
+                   currentPage = currentPage -1;
                    resetIeltsEyeWeibo();
                }
 
+           },
+           complete:function(){
+               $.mobile.loading( "hide" );
            },
            error:function(jqXHR, textStatus, errorThrown){
                resetIeltsEyeWeibo(textStatus+":"+errorThrown, "出现错误了，请稍后再试。");
@@ -139,3 +183,23 @@ function resetIeltsEyeWeibo(title,content){
     $( "#ieltsEyeWeibos" ).html(dataHtml).closest( "#ieltsEyeWeibos" ).listview( "refresh" ).trigger( "create" );
 }
 
+function formateWeibo(data){
+    if(data.datas != ''){
+        var weibos = '';
+        $.each(data.datas, function(k, v){
+               weibos+='<li data-role="list-divider"><a href="" onclick="goUserHome('+v.uid+')">'+v.screen_name+'</a></li><li>'+v.text+'<p class="muted"><small>'+v.created_at+'</small></p></li>';
+               });
+        return weibos;
+    }
+    return '';
+}
+
+function goUserHome(uid){
+    console.log(uid);
+    if(!uid){
+        return false;
+    }else{
+        var ref = window.open(encodeURI(weiboUrl+'/u/'+uid), '_blank', 'location=yes');
+    }
+    return true;
+}
