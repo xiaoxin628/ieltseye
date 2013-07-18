@@ -21,7 +21,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 
@@ -36,37 +37,37 @@
         <script type="text/javascript">
             app.initialize();
         </script>
-        
-        <div class="app ui-gird-solo" id="app">
-            <div class="ui-gird-solo">
-                <div data-role="header" data-position="fixed">
-                    <a href="#" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="c" data-inline="true" id="refresh" class="ui-btn-right">Refresh</a>
-                    <a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-theme="c" data-inline="true" id="ieltseyeHome" class="ui-btn-left">Home</a>
-                    <h4><a href="#" onclick="goUserHome(3594633532)">雅思口语网蹲哥</a></h4>
+        <div data-role="page">
+            <div data-role="header" data-position="fixed">
+                <a href="#" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="c" data-inline="true" id="refresh" class="ui-btn-right">Refresh</a>
+                <a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-theme="c" data-inline="true" id="ieltseyeHome" class="ui-btn-left">Home</a>
+                <h4><a href="#" onclick="goUserHome(3594633532)">雅思口语网蹲哥</a></h4>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <form id="ieltseyeSearchForm" class="validate" action="#">
+                            <input type="search" name="keyword" id="searchKeyword" value="" placeholder="输入要查询的关键字...">
+                        </form>
+                    </div>
+                </div>
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <ul data-role="listview" data-inset="true"id="ieltsEyeWeibos" data-divider-theme="b"  data-theme="c" >
+                            <li data-role="list-divider"><a href="index.html">提醒</a></li>
+                            <li>
+                                <strong>目前还没有数据</strong>
+                                <p class="muted"><small>2013-7-18 9:50:33</small></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="ui-grid-solo">
-                <div class="ui-block-a">
-                    <form id="ieltseyeSearchForm" class="validate" action="#">
-                        <input type="search" name="keyword" id="searchKeyword" value="" placeholder="输入要查询的关键字...">
-                    </form>
+            <div data-role="footer">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a id="prevPage" href="#" data-role="button" data-icon="arrow-l" data-iconpos="left"  data-theme="c">上一页</a></div>
+                    <div class="ui-block-b"><a id="nextPage" href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">下一页</a></div>
                 </div>
-            </div>
-            <div class="ui-grid-solo">
-                <div class="ui-block-a">
-                    <ul data-role="listview" data-inset="true"id="ieltsEyeWeibos" data-divider-theme="b"  data-theme="c" >
-                        <li data-role="list-divider"><a href="index.html">提醒</a></li>
-                        <li>
-                            <strong>目前还没有数据</strong>
-                            <p class="muted"><small>2013-7-18 9:50:33</small></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ui-grid-a">
-                <div class="ui-block-a"><a id="prevPage" href="#" data-role="button" data-icon="arrow-l" data-iconpos="left"  data-theme="c">上一页</a></div>
-                <div class="ui-block-b"><a id="nextPage" href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">下一页</a></div>
             </div>
         </div>
     </body>
