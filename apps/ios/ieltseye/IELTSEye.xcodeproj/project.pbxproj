@@ -48,15 +48,13 @@
 		C6847A141797A1BC00FC6B68 /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A121797A19D00FC6B68 /* icon72.png */; };
 		C6847A161797A1FC00FC6B68 /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A151797A1FC00FC6B68 /* icon144.png */; };
 		C6847A1F1797A3D300FC6B68 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A0C17979E9000FC6B68 /* Default.png */; };
-		C6847A201797A3E100FC6B68 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A0E17979E9600FC6B68 /* Default@2x.png */; };
-		C6847A211797A3F900FC6B68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A1017979E9D00FC6B68 /* Default-568h@2x.png */; };
-		C6847A221797A44700FC6B68 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A191797A21300FC6B68 /* Default-Portrait@2x~ipad.png */; };
-		C6847A231797A45E00FC6B68 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A171797A20A00FC6B68 /* Default-Portrait~ipad.png */; };
-		C6847A241797A47000FC6B68 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A1B1797A21F00FC6B68 /* Default-Landscape~ipad.png */; };
-		C6847A251797A47B00FC6B68 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A1D1797A22900FC6B68 /* Default-Landscape@2x~ipad.png */; };
-		C6847A271797A9D300FC6B68 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A261797A9D200FC6B68 /* Default.png */; };
-		C6847A291797A9DC00FC6B68 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A281797A9DC00FC6B68 /* Default@2x.png */; };
-		C6847A2B1797A9F900FC6B68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A2A1797A9F900FC6B68 /* Default-568h@2x.png */; };
+		C6847A2D1797D6E000FC6B68 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A2C1797D6E000FC6B68 /* Default.png */; };
+		C6847A2F1797D6F300FC6B68 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A2E1797D6F300FC6B68 /* Default@2x.png */; };
+		C6847A311797D6F700FC6B68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A301797D6F700FC6B68 /* Default-568h@2x.png */; };
+		C6847A331797D70F00FC6B68 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A321797D70F00FC6B68 /* Default-Portrait~ipad.png */; };
+		C6847A351797D71600FC6B68 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A341797D71500FC6B68 /* Default-Portrait@2x~ipad.png */; };
+		C6847A371797D72500FC6B68 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A361797D72500FC6B68 /* Default-Landscape~ipad.png */; };
+		C6847A391797D72C00FC6B68 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6847A381797D72C00FC6B68 /* Default-Landscape@2x~ipad.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -125,17 +123,15 @@
 		C6847A0817979E8000FC6B68 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		C6847A0A17979E8500FC6B68 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		C6847A0C17979E9000FC6B68 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C6847A0E17979E9600FC6B68 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C6847A1017979E9D00FC6B68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C6847A121797A19D00FC6B68 /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
 		C6847A151797A1FC00FC6B68 /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144.png; sourceTree = "<group>"; };
-		C6847A171797A20A00FC6B68 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		C6847A191797A21300FC6B68 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
-		C6847A1B1797A21F00FC6B68 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		C6847A1D1797A22900FC6B68 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		C6847A261797A9D200FC6B68 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C6847A281797A9DC00FC6B68 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C6847A2A1797A9F900FC6B68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C6847A2C1797D6E000FC6B68 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C6847A2E1797D6F300FC6B68 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C6847A301797D6F700FC6B68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C6847A321797D70F00FC6B68 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		C6847A341797D71500FC6B68 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		C6847A361797D72500FC6B68 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		C6847A381797D72C00FC6B68 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = IELTSEye/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,17 +206,15 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				C6847A2A1797A9F900FC6B68 /* Default-568h@2x.png */,
-				C6847A281797A9DC00FC6B68 /* Default@2x.png */,
-				C6847A261797A9D200FC6B68 /* Default.png */,
-				C6847A1D1797A22900FC6B68 /* Default-Landscape@2x~ipad.png */,
-				C6847A1B1797A21F00FC6B68 /* Default-Landscape~ipad.png */,
-				C6847A191797A21300FC6B68 /* Default-Portrait@2x~ipad.png */,
-				C6847A171797A20A00FC6B68 /* Default-Portrait~ipad.png */,
+				C6847A381797D72C00FC6B68 /* Default-Landscape@2x~ipad.png */,
+				C6847A361797D72500FC6B68 /* Default-Landscape~ipad.png */,
+				C6847A341797D71500FC6B68 /* Default-Portrait@2x~ipad.png */,
+				C6847A321797D70F00FC6B68 /* Default-Portrait~ipad.png */,
+				C6847A301797D6F700FC6B68 /* Default-568h@2x.png */,
+				C6847A2E1797D6F300FC6B68 /* Default@2x.png */,
+				C6847A2C1797D6E000FC6B68 /* Default.png */,
 				C6847A151797A1FC00FC6B68 /* icon144.png */,
 				C6847A121797A19D00FC6B68 /* icon72.png */,
-				C6847A1017979E9D00FC6B68 /* Default-568h@2x.png */,
-				C6847A0E17979E9600FC6B68 /* Default@2x.png */,
 				C6847A0C17979E9000FC6B68 /* Default.png */,
 				C6847A0A17979E8500FC6B68 /* icon114.png */,
 				C6847A0817979E8000FC6B68 /* icon57.png */,
@@ -439,15 +433,13 @@
 				C6847A141797A1BC00FC6B68 /* icon72.png in Resources */,
 				C6847A161797A1FC00FC6B68 /* icon144.png in Resources */,
 				C6847A1F1797A3D300FC6B68 /* Default.png in Resources */,
-				C6847A201797A3E100FC6B68 /* Default@2x.png in Resources */,
-				C6847A211797A3F900FC6B68 /* Default-568h@2x.png in Resources */,
-				C6847A221797A44700FC6B68 /* Default-Portrait@2x~ipad.png in Resources */,
-				C6847A231797A45E00FC6B68 /* Default-Portrait~ipad.png in Resources */,
-				C6847A241797A47000FC6B68 /* Default-Landscape~ipad.png in Resources */,
-				C6847A251797A47B00FC6B68 /* Default-Landscape@2x~ipad.png in Resources */,
-				C6847A271797A9D300FC6B68 /* Default.png in Resources */,
-				C6847A291797A9DC00FC6B68 /* Default@2x.png in Resources */,
-				C6847A2B1797A9F900FC6B68 /* Default-568h@2x.png in Resources */,
+				C6847A2D1797D6E000FC6B68 /* Default.png in Resources */,
+				C6847A2F1797D6F300FC6B68 /* Default@2x.png in Resources */,
+				C6847A311797D6F700FC6B68 /* Default-568h@2x.png in Resources */,
+				C6847A331797D70F00FC6B68 /* Default-Portrait~ipad.png in Resources */,
+				C6847A351797D71600FC6B68 /* Default-Portrait@2x~ipad.png in Resources */,
+				C6847A371797D72500FC6B68 /* Default-Landscape~ipad.png in Resources */,
+				C6847A391797D72C00FC6B68 /* Default-Landscape@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,9 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Shuzu Li (7NHVV2TJUM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shuzu Li (7NHVV2TJUM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -543,10 +536,12 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IELTSEye/IELTSEye-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = IELTSEye;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -554,9 +549,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Shuzu Li (7NHVV2TJUM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shuzu Li (7NHVV2TJUM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IELTSEye/IELTSEye-Prefix.pch";
@@ -564,10 +560,12 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IELTSEye/IELTSEye-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = IELTSEye;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -620,7 +618,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shuzu Li (LPU355R3K7)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -644,9 +642,10 @@
 					CoreMedia,
 					"-weak-lSystem",
 					"-force_load",
-					"${TARGET_BUILD_DIR}/libCordova.a",
+					"${BUILT_PRODUCTS_DIR}/libCordova.a",
 					"-ObjC",
 				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "98164B79-54A5-4024-ADD0-6379E63ACBF9";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
