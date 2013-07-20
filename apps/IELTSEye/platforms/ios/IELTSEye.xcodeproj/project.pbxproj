@@ -57,6 +57,8 @@
 		C6190C3D179AA0DD006C0492 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C3C179AA0DD006C0492 /* MessageUI.framework */; };
 		C6190C3F179AA87E006C0492 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C3E179AA87E006C0492 /* AdSupport.framework */; };
 		C6190C41179AA905006C0492 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C40179AA905006C0492 /* StoreKit.framework */; };
+		C6E7BBE0179B54FE005B2E1C /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E7BBDE179B54FE005B2E1C /* libMobClickLibrary.a */; };
+		C6E7BBE2179B5556005B2E1C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E7BBE1179B5556005B2E1C /* libz.dylib */; };
 		CCAC56FA25B14DA2AEA21303 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41495B1EC754413A8DB883B1 /* CDVInAppBrowser.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		E7F8960E7DF2449D917AE319 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D2BE8E17074C97B778DF5B /* CDVDevice.m */; };
@@ -151,6 +153,9 @@
 		C6190C3C179AA0DD006C0492 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C6190C3E179AA87E006C0492 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C6190C40179AA905006C0492 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C6E7BBDE179B54FE005B2E1C /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		C6E7BBDF179B54FE005B2E1C /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		C6E7BBE1179B5556005B2E1C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D2ED2D77A94F4A47A278A67B /* CDVReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVReachability.m; path = "org.apache.cordova.core.network-information/CDVReachability.m"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		DF8B4658F6BB4BE1BB63B819 /* CDVNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = org.apache.cordova.core.dialogs/CDVNotification.m; sourceTree = "<group>"; };
@@ -166,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E7BBE2179B5556005B2E1C /* libz.dylib in Frameworks */,
 				C6190C41179AA905006C0492 /* StoreKit.framework in Frameworks */,
 				C6190C3F179AA87E006C0492 /* AdSupport.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -189,6 +195,7 @@
 				30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				C6190C3B179A9F6E006C0492 /* libGoogleAdMobAds.a in Frameworks */,
+				C6E7BBE0179B54FE005B2E1C /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,9 +242,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				C6190C40179AA905006C0492 /* StoreKit.framework */,
-				C6190C3E179AA87E006C0492 /* AdSupport.framework */,
-				C6190C3C179AA0DD006C0492 /* MessageUI.framework */,
+				C6E7BBDD179B54D5005B2E1C /* umeng */,
 				C6190C26179A9E81006C0492 /* GoogleAdMob */,
 				F840E1F0165FE0F500CFE078 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
@@ -281,6 +286,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6E7BBE1179B5556005B2E1C /* libz.dylib */,
+				C6190C40179AA905006C0492 /* StoreKit.framework */,
+				C6190C3E179AA87E006C0492 /* AdSupport.framework */,
+				C6190C3C179AA0DD006C0492 /* MessageUI.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5AA0E66E1729F460000DC89A /* ImageIO.framework */,
 				5AA0E66C1729F45B000DC89A /* OpenAL.framework */,
@@ -394,6 +403,15 @@
 				C6190C39179A9F6E006C0492 /* libGoogleAdMobAds.a */,
 			);
 			name = GoogleAdMob;
+			sourceTree = "<group>";
+		};
+		C6E7BBDD179B54D5005B2E1C /* umeng */ = {
+			isa = PBXGroup;
+			children = (
+				C6E7BBDE179B54FE005B2E1C /* libMobClickLibrary.a */,
+				C6E7BBDF179B54FE005B2E1C /* MobClick.h */,
+			);
+			name = umeng;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

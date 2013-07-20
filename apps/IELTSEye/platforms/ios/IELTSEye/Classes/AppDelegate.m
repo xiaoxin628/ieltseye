@@ -29,7 +29,8 @@
 #import "MainViewController.h"
 
 #import <Cordova/CDVPlugin.h>
-
+//umeng
+#import "MobClick.h"
 @implementation AppDelegate
 
 @synthesize window, viewController;
@@ -88,6 +89,10 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 
+    //umeng start
+    [MobClick startWithAppkey:@"51eb1c2256240bc7fa05b7a2" reportPolicy:BATCH channelId:@"AppStrore"];
+//    [MobClick updateOnlineConfig];
+    //umeng end
     return YES;
 }
 
