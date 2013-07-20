@@ -25,6 +25,8 @@ import org.apache.cordova.*;
 import android.widget.LinearLayout;
 import com.google.ads.*;
 //google admob end 
+//umeng analytics
+import com.umeng.analytics.MobclickAgent;
 
 public class IELTSEye extends DroidGap
 {
@@ -47,5 +49,17 @@ public class IELTSEye extends DroidGap
 //    	google admob end 
 
     }
+    
+    //umeng start
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
+    
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    //umeng end
 }
 

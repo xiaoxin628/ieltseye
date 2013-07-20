@@ -11,7 +11,11 @@
         </activity>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.ads.AdActivity">
         </activity>
+		<meta-data android:value="51eabdec56240bca1b05e670" android:name="UMENG_APPKEY"></meta-data>
+		<meta-data android:value="ieltseye00001" android:name="UMENG_CHANNEL"/>
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 </manifest>
