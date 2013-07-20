@@ -28,8 +28,12 @@
 #import <Cordova/CDVViewController.h>
 #import <Cordova/CDVCommandDelegateImpl.h>
 #import <Cordova/CDVCommandQueue.h>
+#import "GADBannerView.h"
 
-@interface MainViewController : CDVViewController
+@interface MainViewController : CDVViewController{
+    //google admob
+    GADBannerView *bannerView_;
+}
 
 @end
 

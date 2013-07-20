@@ -27,6 +27,9 @@
 
 #import "MainViewController.h"
 
+//google admob
+#define MY_BANNER_UNIT_ID @"a151ea648108251"
+
 @implementation MainViewController
 
 - (id)initWithNibName:(NSString*)nibNameOrNil bundle:(NSBundle*)nibBundleOrNil
@@ -75,13 +78,33 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //google admob
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+//    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+      bannerView_ = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, self.view.frame.size.height-GAD_SIZE_320x50.height, GAD_SIZE_320x50.width, GAD_SIZE_320x50.height)];
+    
+    // Specify the ad's "unit identifier". This is your AdMob Publisher ID.
+    bannerView_.adUnitID = MY_BANNER_UNIT_ID;
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
 }
 
 - (void)viewDidUnload
 {
+//    google admob
+    // Don't release the bannerView_ if you are using ARC in your project
+//    [bannerView_ release];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

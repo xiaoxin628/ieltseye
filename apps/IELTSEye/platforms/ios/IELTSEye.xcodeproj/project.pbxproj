@@ -52,6 +52,11 @@
 		84CFF98D92A749B5B8F66454 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = F0686A2BD2794182855B078C /* CDVVibration.m */; };
 		ACB876549224411298D2BF5F /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8B4658F6BB4BE1BB63B819 /* CDVNotification.m */; };
 		B4951854659F429EA91BE941 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2ED2D77A94F4A47A278A67B /* CDVReachability.m */; };
+		C6190C3A179A9F6E006C0492 /* Add-ons in Resources */ = {isa = PBXBuildFile; fileRef = C6190C2F179A9F6E006C0492 /* Add-ons */; };
+		C6190C3B179A9F6E006C0492 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C39179A9F6E006C0492 /* libGoogleAdMobAds.a */; };
+		C6190C3D179AA0DD006C0492 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C3C179AA0DD006C0492 /* MessageUI.framework */; };
+		C6190C3F179AA87E006C0492 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C3E179AA87E006C0492 /* AdSupport.framework */; };
+		C6190C41179AA905006C0492 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6190C40179AA905006C0492 /* StoreKit.framework */; };
 		CCAC56FA25B14DA2AEA21303 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41495B1EC754413A8DB883B1 /* CDVInAppBrowser.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		E7F8960E7DF2449D917AE319 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D2BE8E17074C97B778DF5B /* CDVDevice.m */; };
@@ -132,6 +137,20 @@
 		B44B6DBBCB7149BF8D2E5987 /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = org.apache.cordova.core.console/CDVLogger.h; sourceTree = "<group>"; };
 		BE163A8ADAE842DFB0572FDC /* CDVBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVBattery.h; path = "org.apache.cordova.core.battery-status/CDVBattery.h"; sourceTree = "<group>"; };
 		C45DBBFD073342CA918F50EE /* CDVVibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVVibration.h; path = org.apache.cordova.core.vibration/CDVVibration.h; sourceTree = "<group>"; };
+		C6190C2F179A9F6E006C0492 /* Add-ons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Add-ons"; sourceTree = "<group>"; };
+		C6190C30179A9F6E006C0492 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		C6190C31179A9F6E006C0492 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		C6190C32179A9F6E006C0492 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		C6190C33179A9F6E006C0492 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		C6190C34179A9F6E006C0492 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		C6190C35179A9F6E006C0492 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		C6190C36179A9F6E006C0492 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		C6190C37179A9F6E006C0492 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		C6190C38179A9F6E006C0492 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		C6190C39179A9F6E006C0492 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		C6190C3C179AA0DD006C0492 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C6190C3E179AA87E006C0492 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C6190C40179AA905006C0492 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D2ED2D77A94F4A47A278A67B /* CDVReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVReachability.m; path = "org.apache.cordova.core.network-information/CDVReachability.m"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		DF8B4658F6BB4BE1BB63B819 /* CDVNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = org.apache.cordova.core.dialogs/CDVNotification.m; sourceTree = "<group>"; };
@@ -147,6 +166,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6190C41179AA905006C0492 /* StoreKit.framework in Frameworks */,
+				C6190C3F179AA87E006C0492 /* AdSupport.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */,
+				C6190C3D179AA0DD006C0492 /* MessageUI.framework in Frameworks */,
+				301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */,
 				5AA0E66D1729F45B000DC89A /* OpenAL.framework in Frameworks */,
@@ -154,18 +179,16 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */,
 				301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */,
-				301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */,
 				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
 				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
 				301BF5C1109A6A2B0062928A /* MediaPlayer.framework in Frameworks */,
 				301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */,
-				301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
+				C6190C3B179A9F6E006C0492 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +235,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C6190C40179AA905006C0492 /* StoreKit.framework */,
+				C6190C3E179AA87E006C0492 /* AdSupport.framework */,
+				C6190C3C179AA0DD006C0492 /* MessageUI.framework */,
+				C6190C26179A9E81006C0492 /* GoogleAdMob */,
 				F840E1F0165FE0F500CFE078 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -351,6 +378,24 @@
 			path = se.lproj;
 			sourceTree = "<group>";
 		};
+		C6190C26179A9E81006C0492 /* GoogleAdMob */ = {
+			isa = PBXGroup;
+			children = (
+				C6190C2F179A9F6E006C0492 /* Add-ons */,
+				C6190C30179A9F6E006C0492 /* GADAdMobExtras.h */,
+				C6190C31179A9F6E006C0492 /* GADAdNetworkExtras.h */,
+				C6190C32179A9F6E006C0492 /* GADAdSize.h */,
+				C6190C33179A9F6E006C0492 /* GADBannerView.h */,
+				C6190C34179A9F6E006C0492 /* GADBannerViewDelegate.h */,
+				C6190C35179A9F6E006C0492 /* GADInterstitial.h */,
+				C6190C36179A9F6E006C0492 /* GADInterstitialDelegate.h */,
+				C6190C37179A9F6E006C0492 /* GADRequest.h */,
+				C6190C38179A9F6E006C0492 /* GADRequestError.h */,
+				C6190C39179A9F6E006C0492 /* libGoogleAdMobAds.a */,
+			);
+			name = GoogleAdMob;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,6 +488,7 @@
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
 				40D5DDB56E81423CAFA0DF51 /* CDVNotification.bundle in Resources */,
+				C6190C3A179A9F6E006C0492 /* Add-ons in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +591,11 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IELTSEye/IELTSEye-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../../Desktop/GoogleAdMobAdsSdkiOS-6.5.0\"",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -576,6 +627,11 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IELTSEye/IELTSEye-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../../Desktop/GoogleAdMobAdsSdkiOS-6.5.0\"",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
