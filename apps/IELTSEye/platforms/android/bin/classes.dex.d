@@ -43,6 +43,5 @@
 /Users/lixiaoxin/Sites/company/ieltseye/apps/IELTSEye/platforms/android/bin/classes/org/apache/cordova/core/Notification.class \
 /Users/lixiaoxin/Sites/company/ieltseye/apps/IELTSEye/platforms/android/bin/classes/org/apache/cordova/core/SplashScreen.class \
 /Users/lixiaoxin/Sites/company/ieltseye/apps/IELTSEye/platforms/android/bin/classes/org/apache/cordova/core/Vibration.class \
-/Users/lixiaoxin/Sites/company/ieltseye/apps/IELTSEye/platforms/android/bin/classes/R.java.d \
 /Users/lixiaoxin/Sites/company/ieltseye/apps/IELTSEye/platforms/android/bin/dexedLibs/cordova-3.0.0-5760cdef1dfb9768775efda3232d97b6.jar \
 /Users/lixiaoxin/Sites/company/ieltseye/apps/IELTSEye/platforms/android/bin/dexedLibs/GoogleAdMobAdsSdk-6.4.1-fc9310400bbae1d0836468779b2dd10c.jar \
