@@ -2,7 +2,8 @@
 <widget id="com.ieltseye.IELTSEye" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>IELTSEye</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Gathering a number of Chinese memories about oral topic of IELTS standard test to help candidates to pass the exam. The information updates newest topic from Sina Weibo up to the minute. 
+        Thanks for following me : http://weibo.com/ieltseye
     </description>
     <author email="lishuzu@gmail.com" href="http://www.ieltseye.com">
         Will Lee
