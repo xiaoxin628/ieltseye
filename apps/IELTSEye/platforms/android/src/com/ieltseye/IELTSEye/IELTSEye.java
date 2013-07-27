@@ -30,6 +30,10 @@ import com.umeng.analytics.MobclickAgent;
 
 public class IELTSEye extends DroidGap
 {
+	//google admob view
+	private AdView adView;
+	//weather launch at first time
+	private Boolean isFirstTime = true;
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -37,13 +41,36 @@ public class IELTSEye extends DroidGap
         // Set by <content src="index.html" /> in config.xml
         super.loadUrl(Config.getStartUrl());
         //super.loadUrl("file:///android_asset/www/index.html")
-//        google admob start
-        AdView adView = new AdView(this, AdSize.BANNER, "a151ea7ab4280fd");
-        LinearLayout layout = super.root;
-        layout.addView(adView);
-        adView.loadAd( new AdRequest());
-//    	google admob end 
+    }
+    
+    public void onStart(){
+    	super.onStart();
+//      google admob start
+    	/*
+    	 * dont display admob when first time launch
+    	 * because admob will call same thread with phoneGap which
+    	 * may cause Fatal signal 11 (SIGSEGV) issue.
+    	 * 
+    	 */
+        if(isFirstTime == true){
+        	isFirstTime = false;
+        }else{
+            if(adView == null){
+                adView = new AdView(this, AdSize.BANNER, "a151ea7ab4280fd");
+                LinearLayout layout = super.root;
+                layout.addView(adView);
+                adView.loadAd( new AdRequest());
+            }
+        }
+//  	google admob end 
+    }
 
+    public void onDestroy() {
+        if (adView != null) {
+        	//destroy google adView
+          adView.destroy();
+        }
+        super.onDestroy();
     }
     
     //umeng start
