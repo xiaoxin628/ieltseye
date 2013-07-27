@@ -82,8 +82,13 @@
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
 //    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-      bannerView_ = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, self.view.frame.size.height-GAD_SIZE_320x50.height, GAD_SIZE_320x50.width, GAD_SIZE_320x50.height)];
-    
+
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+      bannerView_ = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, self.view.frame.size.height-GAD_SIZE_320x50.height, GAD_SIZE_320x50.width, GAD_SIZE_320x50.height)];    
+    }else{
+      bannerView_ = [[GADBannerView alloc] initWithFrame:CGRectMake(20.0, 1004-GAD_SIZE_728x90.height, GAD_SIZE_728x90.width, GAD_SIZE_728x90.height)];
+    }
+//      bannerView_ = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0, self.view.frame.size.height-CGSizeFromGADAdSize(kGADAdSizeSmartBannerPortrait).height, CGSizeFromGADAdSize(kGADAdSizeSmartBannerPortrait).width, CGSizeFromGADAdSize(kGADAdSizeSmartBannerPortrait).height)];
     // Specify the ad's "unit identifier". This is your AdMob Publisher ID.
     bannerView_.adUnitID = MY_BANNER_UNIT_ID;
     

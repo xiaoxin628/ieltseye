@@ -42,51 +42,48 @@ var app = {
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-    //请求数据
     getIeltsWeibo();
-    console.log('Received Event: ' + id);
-  }
-};
-
-$(document).on("pageinit", function(event) {
-  $("#refresh").bind("tap", function() {
-    keyword = '';
-    currentPage = 0;
-    $('#searchKeyword').val(keyword);
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-    getIeltsWeibo();
-  });
-  $("#prevPage").bind("tap", function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-    prevPage();
-  });
-  $("#nextPage").bind("tap", function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-    nextPage();
-  });
-  $("#ieltseyeSearchForm").submit(function() {
-    keyword = $('#searchKeyword').val();
-    currentPage = 0;
-    if (!keyword) {
-      return false;
-    } else {
+    $("#refresh").bind("tap", function() {
+      keyword = '';
+      currentPage = 0;
+      $('#searchKeyword').val(keyword);
       $('html, body').animate({
         scrollTop: 0
       }, 1000);
       getIeltsWeibo();
-      return false;
-    }
-  });
-  $("#ieltseyeHome").bind("tap", function() {
-    var ref = window.open(encodeURI(siteUrl), '_blank', 'location=yes');
-  });
-});
+    });
+    $("#prevPage").bind("tap", function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+      prevPage();
+    });
+    $("#nextPage").bind("tap", function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+      nextPage();
+    });
+    $("#ieltseyeSearchForm").submit(function() {
+      keyword = $('#searchKeyword').val();
+      currentPage = 0;
+      if (!keyword) {
+        return false;
+      } else {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 1000);
+        getIeltsWeibo();
+        return false;
+      }
+    });
+    $("#ieltseyeHome").bind("tap", function() {
+      var ref = window.open(encodeURI(siteUrl), '_blank', 'location=yes');
+    });
+
+    console.log('Received Event: ' + id);
+  }
+};
 
 function getIeltsWeibo() {
   $.mobile.loading("show", {
@@ -210,5 +207,5 @@ function goUserHome(uid) {
     var ref = window.open(encodeURI(weiboUrl + '/u/' + uid), '_blank', 'location=yes');
     return true;
   }
-  return false;//debug
+  return false; //debug
 }

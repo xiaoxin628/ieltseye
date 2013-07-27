@@ -16,10 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
-
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-user-select: text;                  /* prevent copy paste, to allow, change 'none' to 'text' */
@@ -32,4 +28,8 @@ body {
 
 /* Portrait layout (default) */
 .app {
+}
+
+.footer{
+    height:90px;
 }

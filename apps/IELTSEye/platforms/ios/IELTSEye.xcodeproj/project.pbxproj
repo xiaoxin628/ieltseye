@@ -600,6 +600,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shuzu Li (7NHVV2TJUM)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -629,6 +631,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = IELTSEye;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE1B0860-E599-4019-8D0B-F7037F34A91E";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -638,7 +642,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuzu Li (LPU355R3K7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shuzu Li (LPU355R3K7)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -667,8 +671,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = IELTSEye;
-				PROVISIONING_PROFILE = "98164B79-54A5-4024-ADD0-6379E63ACBF9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "98164B79-54A5-4024-ADD0-6379E63ACBF9";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5F524F2B-F97A-49B6-AA21-FB5290B0CA2A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -30,10 +30,6 @@ import com.umeng.analytics.MobclickAgent;
 
 public class IELTSEye extends DroidGap
 {
-//	google admob start
-	private static final String MY_AD_UNIT_ID = "a151ea7ab4280fd";
-	private AdView adView;
-//	google admob end 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -42,10 +38,10 @@ public class IELTSEye extends DroidGap
         super.loadUrl(Config.getStartUrl());
         //super.loadUrl("file:///android_asset/www/index.html")
 //        google admob start
-        adView = new AdView(this, AdSize.BANNER, MY_AD_UNIT_ID);
+        AdView adView = new AdView(this, AdSize.BANNER, "a151ea7ab4280fd");
         LinearLayout layout = super.root;
         layout.addView(adView);
-        adView.loadAd(new AdRequest());
+        adView.loadAd( new AdRequest());
 //    	google admob end 
 
     }
