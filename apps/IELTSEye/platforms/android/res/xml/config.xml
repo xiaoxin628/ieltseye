@@ -32,6 +32,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.core.Device" />
     </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.core.FileUtils" />
+    </feature>
     <access origin="*" />
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />

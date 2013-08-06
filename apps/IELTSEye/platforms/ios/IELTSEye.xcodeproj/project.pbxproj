@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		06287AA0D9A14674BEDC1F3D /* CDVBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0C5DB68064C1DA0DADD1A /* CDVBattery.m */; };
 		074EE004223541A08A9152EB /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C1791CD36C4A4596E63D35 /* CDVLogger.m */; };
@@ -63,6 +62,7 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		E7F8960E7DF2449D917AE319 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D2BE8E17074C97B778DF5B /* CDVDevice.m */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		BB67018552A743A383CFE6F9 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D604F2725449FBBF5F59D9 /* CDVFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +164,8 @@
 		EBF2021A54E84B0EB8BC01A0 /* CDVConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "org.apache.cordova.core.network-information/CDVConnection.h"; sourceTree = "<group>"; };
 		F0686A2BD2794182855B078C /* CDVVibration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVVibration.m; path = org.apache.cordova.core.vibration/CDVVibration.m; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = IELTSEye/config.xml; sourceTree = "<group>"; };
+		E9D604F2725449FBBF5F59D9 /* CDVFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVFile.m"; path = "org.apache.cordova.core.file/CDVFile.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8DF40F13BC5C40368454ED7E /* CDVFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVFile.h"; path = "org.apache.cordova.core.file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +343,8 @@
 				BE163A8ADAE842DFB0572FDC /* CDVBattery.h */,
 				58D2BE8E17074C97B778DF5B /* CDVDevice.m */,
 				A52D28FAA03F44E3932CE6E6 /* CDVDevice.h */,
+				E9D604F2725449FBBF5F59D9 /* CDVFile.m */,
+				8DF40F13BC5C40368454ED7E /* CDVFile.h */,
 			);
 			name = Plugins;
 			path = IELTSEye/Plugins;
@@ -546,6 +550,7 @@
 				B4951854659F429EA91BE941 /* CDVReachability.m in Sources */,
 				06287AA0D9A14674BEDC1F3D /* CDVBattery.m in Sources */,
 				E7F8960E7DF2449D917AE319 /* CDVDevice.m in Sources */,
+				BB67018552A743A383CFE6F9 /* CDVFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

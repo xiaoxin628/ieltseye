@@ -34,6 +34,7 @@
                 app.initialize();
             });
         </script>
+        <script type="text/javascript" src="js/ieltseye.core.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
     </head>
@@ -41,7 +42,6 @@
         <div data-role="page" id="indexView">
             <div data-role="header" data-position="fixed">
                 <a href="#" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="c" data-inline="true" id="refresh" class="ui-btn-right">Refresh</a>
-                <a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-theme="c" data-inline="true" id="ieltseyeHome" class="ui-btn-left" rel="external">Home</a>
                 <h4><a href="#" onclick="goUserHome(3594633532)">雅思口语网蹲哥</a></h4>
             </div>
             <div data-role="content">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="ui-grid-solo">
                     <div class="ui-block-a">
-                        <ul data-role="listview" data-inset="true"id="ieltsEyeWeibos" data-divider-theme="b"  data-theme="c" >
+                        <ul data-role="listview" data-inset="true"id="ieltsEyeWeibos" data-divider-theme="c"  data-theme="c" >
                             <li data-role="list-divider"><a href="index.html">提醒</a></li>
                             <li>
                                 <strong>目前还没有数据</strong>
@@ -68,8 +68,22 @@
                     <div class="ui-block-b"><a id="nextPage" href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">下一页</a></div>
                 </div>
             </div>
+
+            <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+
+                <a href="#" data-role="button" data-icon="home" data-theme="c" data-inline="true" rel="external" onclick="javascript:var ref = window.open(encodeURI('http://www.ieltseye.com/'), '_blank', 'location=yes');">官网</a>
+                <a href="#" data-role="button" data-icon="home" data-theme="c" data-inline="true" rel="external" onclick="javascript:var ref = window.open(encodeURI('http://weibo.com/ieltseye'), '_blank', 'location=yes');">网蹲哥微博</a>
+
+                <a href="#" data-role="button" data-icon="home" data-theme="c" data-inline="true"  rel="external" onclick="javascript:var ref = window.open(encodeURI('http://www.ieltseye.com/about'), '_blank', 'location=yes');">用前必读</a>
+                
+  
+            </div><!-- /panel -->
+            
             <div data-role="footer" class="footer">
-                    Copyright © 2013-2020 by IELTSEYE. <br />All Rights Reserved.<br />
+                    @雅思口语网蹲哥 请注明: rm p1 p2 p3<br />
+                    微博尽量使用文字格式和英文，便于搜索和分享。<br/>
+                    Copyright © 2013-2020 by IELTSEYE. <br />
+                    All Rights Reserved.<br />
             </div>
         </div>
     </body>

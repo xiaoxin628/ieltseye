@@ -33,3 +33,6 @@ body {
 .footer{
     height:90px;
 }
+.ui-content{
+    padding: 0px;
+}
