@@ -39,20 +39,20 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         console.log('Received Event: ' + id);
-        $.mobile.allowCrossDomainPages = true;
-        $.mobile.pushStateEnabled = false;
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFileSystemFail);
+        // $.mobile.allowCrossDomainPages = true;
+        // $.mobile.pushStateEnabled = false;
+        // window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFileSystemFail);
 
-        $( document ).on( "swipeleft swiperight", "#indexView", function( e ) {
-            // We check if there is no open panel on the page because otherwise
-            // a swipe to close the left panel would also open the right panel (and v.v.).
-            // We do this by checking the data that the framework stores on the page element (panel: open).
-            if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-                if ( e.type === "swipeleft"  ) {
-                    $( "#right-panel" ).panel( "open" );
-                }
-            }
-        });
+        // $( document ).on( "swipeleft swiperight", "#indexView", function( e ) {
+        //     // We check if there is no open panel on the page because otherwise
+        //     // a swipe to close the left panel would also open the right panel (and v.v.).
+        //     // We do this by checking the data that the framework stores on the page element (panel: open).
+        //     if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+        //         if ( e.type === "swipeleft"  ) {
+        //             $( "#right-panel" ).panel( "open" );
+        //         }
+        //     }
+        // });
 
         getIeltsWeibo();
         $("#refresh").bind("tap", function() {
@@ -95,10 +95,10 @@ var app = {
 
 function getIeltsWeibo() {
     console.log('start request Weibo data');
-    //检查网络连接
-    if (!checkConnection()) {
-        return false;
-    }
+    // 检查网络连接
+    // if (!checkConnection()) {
+    //     return false;
+    // }
 
     $.mobile.loading("show", {
         text: '',
@@ -116,6 +116,7 @@ function getIeltsWeibo() {
         dataType: "jsonp",
         jsonp: "callback",
         success: function(data) {
+            console.log(apiUrl + "?page=" + currentPage + "&keyword=" + keyword);
             if (typeof(data.datas)[0] != 'undefined') {
                 var weibos = formateWeibo(data);
                 $("#ieltsEyeWeibos").html(weibos).closest("#ieltsEyeWeibos").listview("refresh").trigger("create");
